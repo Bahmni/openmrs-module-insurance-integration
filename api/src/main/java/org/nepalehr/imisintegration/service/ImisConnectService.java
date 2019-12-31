@@ -8,5 +8,5 @@ public interface ImisConnectService {
 
 	Boolean isInsuranceCardValid(String nhisNumber);
 
-	String eligibilityRequest(String patientId, String nshiId);
+	String eligibilityRequest(String nhisNumber);
 }

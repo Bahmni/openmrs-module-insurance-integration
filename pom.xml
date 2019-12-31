@@ -29,7 +29,10 @@
 		<webservicesRestModuleVersion>2.17</webservicesRestModuleVersion>
 		<atomfeed.version>1.9.4</atomfeed.version>
 		<httpClient.version>4.5.8</httpClient.version>
-		<bahmnicoreVersion>0.92-SNAPSHOT</bahmnicoreVersion>
+		<bahmnicoreVersion>0.93-SNAPSHOT</bahmnicoreVersion>
+		<openmrsAtomfeedVersion>2.5.5-SNAPSHOT</openmrsAtomfeedVersion>
+		<atomfeedVersion>1.9.4</atomfeedVersion>
+		<bedManagementVersion>5.10.0-SNAPSHOT</bedManagementVersion>
 	</properties>
 
 	<dependencyManagement>
@@ -76,9 +79,27 @@
 				<scope>provided</scope>
 			</dependency>
 			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>webservices.rest-omod-common</artifactId>
+				<version>2.12</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
 				<groupId>org.bahmni.module</groupId>
 				<artifactId>bahmnicore-api</artifactId>
 				<version>${bahmnicoreVersion}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>bedmanagement-api</artifactId>
+				<version>${bedManagementVersion}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>bedmanagement-omod</artifactId>
+				<version>${bedManagementVersion}</version>
 				<scope>provided</scope>
 			</dependency>
 

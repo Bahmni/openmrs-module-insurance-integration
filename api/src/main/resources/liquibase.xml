@@ -22,5 +22,17 @@
 			('NHIS Primary Contact Point','Is NHIS primary contact point','java.lang.Boolean',0, 1, now(), uuid());
 		</sql>
 	</changeSet>
+	
+   <changeSet id="bed-type-concept-2019-11-15-11:20" author="dipakthapa">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM scheduler_task_config where name = 'OpenMRS Bed Sales Quotation Generator Scheduler';
+            </sqlCheck>
+        </preConditions>
+        <comment>
+            Add a scheduler for daily bed sales quotation
+        </comment>
+        <sqlFile path="migration/V1_0001_setupBedQuotationScheduler.sql"/>
+    </changeSet>
 
 </databaseChangeLog>

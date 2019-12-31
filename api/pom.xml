@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <project
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
-	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.nepalehr</groupId>
@@ -55,6 +56,11 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>webservices.rest-omod-common</artifactId>
+		</dependency>
+
+		<dependency>
 			<groupId>org.bahmni.module</groupId>
 			<artifactId>bahmnicore-api</artifactId>
 			<scope>provided</scope>
@@ -64,6 +70,37 @@
 			<groupId>org.bahmni.module</groupId>
 			<artifactId>web-clients</artifactId>
 			<version>0.92-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.ict4h.openmrs</groupId>
+			<artifactId>openmrs-atomfeed-common</artifactId>
+			<version>${openmrsAtomfeedVersion}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.ict4h.openmrs</groupId>
+			<artifactId>openmrs-atomfeed-omod</artifactId>
+			<version>${openmrsAtomfeedVersion}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.ict4h.openmrs</groupId>
+			<artifactId>openmrs-atomfeed-api</artifactId>
+			<version>${openmrsAtomfeedVersion}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.ict4h</groupId>
+			<artifactId>atomfeed-server</artifactId>
+			<version>${atomfeedVersion}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.ict4h</groupId>
+			<artifactId>atomfeed-commons</artifactId>
+			<version>${atomfeedVersion}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>bedmanagement-api</artifactId>
 		</dependency>
 
 	</dependencies>

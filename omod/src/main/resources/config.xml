@@ -15,20 +15,24 @@
 	<updateURL>https://modules.openmrs.org/modules/download/${project.parent.artifactId}/update.rdf
 	</updateURL>
 	<!-- Module Activator -->
-	<activator>${project.parent.groupId}.${project.parent.artifactId}.ImisIntegrationActivator
-	</activator>
+	<activator>${project.parent.groupId}.${project.parent.artifactId}.ImisIntegrationActivator</activator>
 	
 	<require_version>${openMRSRuntimeVersion}</require_version>
-	<!-- / Module Properties -->
-
-
-
+	
 	<!-- Required Modules -->
 	<require_modules>
-		<require_module>org.openmrs.module.webservices.rest</require_module>
+		<require_module>org.ict4h.openmrs.openmrs-atomfeed</require_module>
 		<require_module>org.bahmni.module.bahmnicore</require_module>
+		<require_module>org.openmrs.module.bedmanagement</require_module>
+		<require_module>org.openmrs.module.webservices.rest</require_module>
 	</require_modules>
 	<!-- / Required Modules -->
-
+	
+	<!-- / Module Properties -->
+	
+	<advice>
+        <point>org.openmrs.module.bedmanagement.service.BedManagementService</point>
+        <class>org.nepalehr.imisintegration.bed.atomfeed.BedManagementAdvice</class>
+    </advice>
 
 </module>
