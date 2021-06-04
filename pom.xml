@@ -28,7 +28,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<webservicesRestModuleVersion>2.17</webservicesRestModuleVersion>
 		<atomfeed.version>1.9.4</atomfeed.version>
-		<httpClient.version>4.5.8</httpClient.version>
+		<httpClient.version>4.5.13</httpClient.version>
 		<bahmnicoreVersion>0.92-SNAPSHOT</bahmnicoreVersion>
 	</properties>
 
