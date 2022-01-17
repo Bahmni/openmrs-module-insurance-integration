@@ -1,12 +1,10 @@
 package org.nepalehr.imisintegration.service.impl;
 
-import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-
 import org.apache.commons.codec.binary.Base64;
-import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.nepalehr.imisintegration.constants.ImisIntegrationProperties;
 import org.nepalehr.imisintegration.pojo.OpenImisAccountInformation;
 import org.nepalehr.imisintegration.service.ImisConnectService;
