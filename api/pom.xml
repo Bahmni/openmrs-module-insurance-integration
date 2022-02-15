@@ -16,6 +16,7 @@
 
 	<properties>
 		<log4jVersion>2.17.1</log4jVersion>
+		<webclientsVesion>0.95.0-SNAPSHOT</webclientsVesion>
 	</properties>
 
 	<dependencies>
@@ -67,7 +68,7 @@
 		<dependency>
 			<groupId>org.bahmni.module</groupId>
 			<artifactId>web-clients</artifactId>
-			<version>0.92-SNAPSHOT</version>
+			<version>${webclientsVesion}</version>
 		</dependency>
 
 		<dependency>
