@@ -16,7 +16,7 @@
 
 	<properties>
 		<log4jVersion>2.17.1</log4jVersion>
-		<webclientsVesion>0.94.0</webclientsVesion>
+		<webclientsVesion>0.94.1</webclientsVesion>
 	</properties>
 
 	<dependencies>
