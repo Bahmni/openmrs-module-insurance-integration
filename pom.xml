@@ -23,13 +23,12 @@
 	</modules>
 
 	<properties>
-		<openMRSVersion>2.1.1</openMRSVersion>
-		<openMRSRuntimeVersion>1.9.3</openMRSRuntimeVersion>
+		<openMRSVersion>2.1.6</openMRSVersion>
+		<openMRSRuntimeVersion>2.1.6</openMRSRuntimeVersion>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<webservicesRestModuleVersion>2.17</webservicesRestModuleVersion>
-		<atomfeed.version>1.9.4</atomfeed.version>
 		<httpClient.version>4.5.8</httpClient.version>
-		<bahmnicoreVersion>0.92-SNAPSHOT</bahmnicoreVersion>
+		<bahmnicoreVersion>0.94-SNAPSHOT</bahmnicoreVersion>
 	</properties>
 
 	<dependencyManagement>
@@ -212,7 +211,7 @@
 		<repository>
 			<id>openmrs-repo</id>
 			<name>OpenMRS Nexus Repository</name>
-			<url>http://mavenrepo.openmrs.org/nexus/content/repositories/public</url>
+			<url>https://mavenrepo.openmrs.org/nexus/content/repositories/public</url>
 		</repository>
 		<repository>
 			<id>sonatype-nexus-snapshots</id>
@@ -239,7 +238,7 @@
 		<pluginRepository>
 			<id>openmrs-repo</id>
 			<name>OpenMRS Nexus Repository</name>
-			<url>http://mavenrepo.openmrs.org/nexus/content/repositories/public</url>
+			<url>https://mavenrepo.openmrs.org/nexus/content/repositories/public</url>
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>

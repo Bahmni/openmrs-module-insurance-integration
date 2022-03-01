@@ -14,6 +14,11 @@
 	<name>OpenIMIS Integration Module API</name>
 	<description>API project for openimis-integration</description>
 
+	<properties>
+		<log4jVersion>2.17.1</log4jVersion>
+		<webclientsVesion>0.94.2-SNAPSHOT</webclientsVesion>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.openmrs.api</groupId>
@@ -63,9 +68,21 @@
 		<dependency>
 			<groupId>org.bahmni.module</groupId>
 			<artifactId>web-clients</artifactId>
-			<version>0.92-SNAPSHOT</version>
+			<version>${webclientsVesion}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>${log4jVersion}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${log4jVersion}</version>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
